@@ -29,7 +29,6 @@
 
 .decorated-zone {
   position: relative;
-  /* max-block-size: 94vh; */
 }
 
 .decorated-zone::before {
@@ -108,6 +107,12 @@
   max-inline-size: 364px;
 }
 
+@media (min-width: 375px) {
+  header.decorated-zone::after {
+    inset-block-end: 19.7px;
+  }
+}
+
 @media (min-width: 768px) {
   .header {
     min-height: 984px;
@@ -116,6 +121,10 @@
   .decorated-zone {
     padding-top: 97px;
     gap: 134px;
+  }
+
+  header.decorated-zone::after {
+    inset-block-end: 0;
   }
 
   .header__theme-menu {
@@ -139,6 +148,10 @@
   .decorated-zone {
     padding-top: 0px;
     gap: 0px;
+  }
+
+  header.decorated-zone::after {
+    inset-block-end: 40px;
   }
 
   .header__theme-menu {
