@@ -2,8 +2,8 @@
   display: grid;
   grid-template-rows: max-content max-content max-content;
   align-items: start;
-  height: 94vh;
-  min-height: 668px;
+  height: 100vh;
+  min-height: 648px;
 }
 
 .decorative-rec-icon {
@@ -29,7 +29,7 @@
 
 .decorated-zone {
   position: relative;
-  min-block-size: 648px;
+  max-block-size: 94vh;
 }
 
 .decorated-zone::before {
@@ -110,12 +110,10 @@
 
 @media (min-width: 768px) {
   .header {
-    min-height: 1024px;
+    min-height: 984px;
   }
 
   .decorated-zone {
-    min-block-size: 984px;
-    position: relative;
     padding-top: 97px;
     gap: 134px;
   }
@@ -139,7 +137,6 @@
   }
 
   .decorated-zone {
-    min-block-size: 728px;
     padding-top: 0px;
     gap: 0px;
   }
