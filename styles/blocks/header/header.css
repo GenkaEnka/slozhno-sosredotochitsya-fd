@@ -29,7 +29,7 @@
 
 .decorated-zone {
   position: relative;
-  max-block-size: 94vh;
+  /* max-block-size: 94vh; */
 }
 
 .decorated-zone::before {
