@@ -1,0 +1,31 @@
+.footer {
+  display: grid;
+  height: 80vh;
+  min-height: 647px;
+}
+
+.footer__text {
+  justify-self: center;
+  align-self: center;
+  text-shadow: 2px 2px 0 var(--accent-clr);
+}
+
+@media (min-width: 768px) {
+  .footer {
+    min-height: 984px;
+  }
+
+  .footer.decorated-zone {
+    padding-top: 4px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer {
+    min-height: 728px;
+  }
+
+  .footer.decorated-zone {
+    padding: 0 0 0 1px;
+  }
+}

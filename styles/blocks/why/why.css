@@ -1,0 +1,23 @@
+.why {
+  margin: 50px 0 0;
+}
+
+@media (min-width: 768px) {
+  .why {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    column-gap: var(--gap);
+    margin: 0;
+    padding-top: 80px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .why {
+    grid-template-columns: 314px 1fr;
+  }
+
+  .why__list-item {
+    padding-bottom: 0.5px;
+  }
+}
