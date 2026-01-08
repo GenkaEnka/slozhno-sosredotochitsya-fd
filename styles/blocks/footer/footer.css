@@ -24,14 +24,11 @@
 @media (min-width: 768px) {
   .footer {
     min-height: 984px;
-  }
-
-  .footer.decorated-zone {
-    padding-top: 4px;
+    padding-top: 0;
   }
 
   footer.decorated-zone::before {
-    inset-block-start: 0;
+    inset-block-start: -1px;
   }
 }
 
@@ -42,10 +39,6 @@
 
   .footer__text {
     padding-top: 39px;
-  }
-
-  .footer.decorated-zone {
-    padding: 0 0 0 1px;
   }
 
   footer.decorated-zone::before {
