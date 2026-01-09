@@ -11,4 +11,11 @@ html.theme-dark {
   --rec-decoration-clr: #ff0070;
   --cover-image: url(../images/cover-image-dark.png);
   --page-bg: #000028;
+  --theme-button-focus-underline-clr: #ff0070;
+  --accent-dark-clr: #ff0070;
+}
+
+html.theme-dark .accented-link:focus-visible {
+  outline: none;
+  border: 1px solid var(--text-clr);
 }

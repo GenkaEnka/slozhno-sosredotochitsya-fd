@@ -5,6 +5,7 @@
 @media (min-width: 768px) {
   .what {
     margin: 60.5px 0 0;
+    grid-template-columns: 1fr;
   }
 
   .what__heading {

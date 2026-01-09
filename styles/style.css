@@ -43,18 +43,19 @@
 .accented-link {
   color: var(--text-clr);
   text-decoration: none;
+  border: 1px solid transparent;
   text-shadow: 2px 2px 0 var(--accent-clr);
+  transition: border-color 0.2s ease, color 0.2s ease;
 }
 
 .accented-link:hover {
-  text-decoration: underline;
-  text-decoration-color: var(--accent-clr);
+  border-bottom-color: var(--link-focus-underline-clr);
 }
 
 .accented-link:focus-visible {
-  outline: 1px solid var(--accent-clr);
-  outline-offset: 2px;
-  text-decoration: none;
+  border-color: #000;
+  outline: none;
+  border-bottom-color: var(--link-focus-underline-clr);
 }
 
 .paragraph-text {
@@ -63,14 +64,13 @@
 }
 
 .header__theme-menu-button:hover {
-  outline: 1px solid var(--menu-clr);
+  outline: 1px solid var(--button-hover-clr);
   outline-offset: 2px;
 }
 
 .header__theme-menu-button:focus-visible {
-  text-decoration: underline;
-  text-decoration-color: var(--menu-clr);
   outline: none;
+  border-bottom-color: var(--theme-button-focus-underline-clr);
 }
 
 .header__theme-menu-button_active {
@@ -122,6 +122,13 @@ h2.section__heading {
 @media (min-width: 768px) {
   .page {
     padding: 20px;
+  }
+
+  .section {
+    display: grid;
+    grid-template-columns: 236px 1fr;
+    column-gap: var(--gap);
+    margin: 80.5px 0 0;
   }
 
   .section-heading {

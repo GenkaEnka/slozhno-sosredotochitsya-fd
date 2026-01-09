@@ -11,6 +11,14 @@ html.theme-light {
   --rec-decoration-clr: transparent;
   --heading-clr: #353430;
   --page-bg: #fff1f7;
+  --theme-button-focus-underline-clr: #000;
+  --link-focus-underline-clr: #000;
+}
+
+html.theme-light .accented-link:focus-visible {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid var(--link-focus-underline-clr);
 }
 
 @media (prefers-color-scheme: light) {
@@ -27,5 +35,7 @@ html.theme-light {
     --rec-decoration-clr: transparent;
     --heading-clr: #353430;
     --page-bg: #fff1f7;
+    --theme-button-focus-underline-clr: #000;
+    --link-focus-underline-clr: #000;
   }
 }

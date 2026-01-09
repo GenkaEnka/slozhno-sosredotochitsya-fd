@@ -4,17 +4,14 @@
 
 @media (min-width: 768px) {
   .why {
-    display: grid;
-    grid-template-columns: 236px 1fr;
-    column-gap: var(--gap);
-    margin: 0;
-    padding-top: 79.8px;
+    padding-top: 50px;
   }
 }
 
 @media (min-width: 1024px) {
   .why {
     grid-template-columns: 314px 1fr;
+    margin: 0;
     padding-top: 40px;
   }
 
