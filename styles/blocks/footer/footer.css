@@ -39,6 +39,7 @@
 
   .footer__text {
     padding-top: 39px;
+    text-shadow: 2px 2px 0 var(--accent-dark-clr);
   }
 
   footer.decorated-zone::before {

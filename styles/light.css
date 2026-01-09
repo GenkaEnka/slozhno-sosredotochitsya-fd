@@ -1,6 +1,7 @@
 html.theme-light {
   --cover-image: url(../images/cover-image-light.png);
   --accent-clr: #ff8dcb;
+  --accent-dark-clr: #ff0070;
   --accent-clr-with-background: #353430;
   --accent-heading-clr: #ffc2e6;
   --text-clr: #353430;
@@ -16,6 +17,7 @@ html.theme-light {
   :root {
     --cover-image: url(../images/cover-image-light.png);
     --accent-clr: #ff8dcb;
+    --accent-dark-clr: #ff0070;
     --accent-clr-with-background: #353430;
     --accent-heading-clr: #ffc2e6;
     --text-clr: #353430;
